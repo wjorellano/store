@@ -8,17 +8,15 @@ const HomeScreen = () => {
     const navigation = useNavigation();
     
     return (
-    <View style={{
-        backgroundColor: '#fff',
-        width: '100%',
-        height: '100%',
-    }} >
-        <Text>Home Screen</Text>
-        <TouchableOpacity
-        onPress={() => navigation.navigate("Stack")}
-        >
-        <Text>Go to Stack Screen</Text>
-        </TouchableOpacity>
+        <View style={{
+            backgroundColor: '#fff',
+            width: '100%',
+            height: '100%',}}>
+            <Text>Home Screen</Text>
+            <TouchableOpacity
+                onPress={() => navigation.navigate("Stack")}>
+                <Text>Go to Stack Screen</Text>
+            </TouchableOpacity>
         </View>
     );
 }

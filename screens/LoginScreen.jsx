@@ -9,11 +9,15 @@ const LoginScreen = () =>{
     <View style={tw.style("flex-col h-120 justify-center mt-60 bottom-15 items-center")}>
       <Text style={tw.style("text-2xl mt-2 mb-3 font-bold left-12  mr-auto")}>Welcome &#128075;,</Text>
       <Text style={tw.style("text-lg left-12 mr-auto mb-4 font-semibold ")}>Sign in to continue</Text>
-      <InputEmail 
+      <InputEmail
+        maxLength={50}
         placeholder="Email" 
         style={tw.style("mt-5 top-5")}/>
-      <InputText 
+      <InputText
+        maxLength={20}
+        minLength={8}
         placeholder="password"
+        secureTextEntry={true}
         style={tw.style("mt-4")}/>
       <Text style={tw.style("top-4 mr-auto left-12  font-semibold")}>Forgot password?</Text>
       <ButtonBlack title="Get started"

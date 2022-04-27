@@ -6,6 +6,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import HomeScreen from "./screens/HomeScreen";
 import SettingsScreen from "./screens/SettingsScreen";
 import StackScreen from "./screens/StackScreen";
+
 const Tab = createBottomTabNavigator();
 const HomeStackNavigator = createNativeStackNavigator();
 
@@ -40,8 +41,7 @@ const MyTab = () => {
             screenOptions={{
                 tabBarActiveTintColor:"black",
                 headerShown: false,
-            }}
-        >
+            }}>
             <Tab.Screen 
                 name="Home" 
                 component={MyStack} />
@@ -51,9 +51,7 @@ const MyTab = () => {
                 options={{
                     tabBarLabel:"Settings",
                     // tabBarBadge:"+99",
-                }}
-
-                />
+                }}/>
         </Tab.Navigator>
     );
 }

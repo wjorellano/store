@@ -14,8 +14,8 @@ export const ButtonBlack = (props) => {
 
 export const ButtonWhite = (props) => {
     return (
-      <TouchableOpacity 
-        style={tw.style(props.style, "bg-white border border-gray-400 shadow-md")}>
+      <TouchableOpacity {...props}
+        style={tw.style(props.style,"bg-white border border-gray-100 shadow-md")}>
         <Text style={tw.style("text-zinc-900 p-4 text-center text-lg")}>{props.title}</Text>
       </TouchableOpacity>
     );

@@ -4,8 +4,8 @@ import tw from "twrnc";
 
 export const InputText = (props) => {
     return(
-        <TextInput
-            style={tw.style(props.style,"p-3 w-84 text-base border-2 border-black shadow-sm border-gray-300 rounded-lg")}
+        <TextInput {...props}
+            style={tw.style(props.style,"p-3 w-84 text-base border-gray-400 shadow-sm rounded-lg")}
             placeholder={props.placeholder}>
         </TextInput>
     )
@@ -30,8 +30,8 @@ export const InputEmail = (props) => {
     }
 
     return(
-        <TextInput
-            style={tw.style("p-3 w-84 text-base border-2 border-black shadow-sm border-gray-300 rounded-lg")}
+        <TextInput {...props}
+            style={tw.style("p-3 w-84 text-base border border-gray-300 shadow-sm rounded-lg")}
             placeholder={props.placeholder}
             onChangeText={(text) => validate(text)}
             value={state}>
